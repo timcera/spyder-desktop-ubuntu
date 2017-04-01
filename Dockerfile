@@ -7,6 +7,7 @@ RUN    apt-get -y install libjs-jquery libjs-mathjax python3-pyqt4 tortoisehg gi
 RUN    apt-get -y install python3-pip
 RUN    pip3 install rope_py3k
 RUN    pip3 install spyder
+RUN    apt-get -y install gfortran
 RUN    pip3 install wdmtoolbox
 RUN    pip3 install hspfbintoolbox
 RUN    pip3 install swmmtoolbox
