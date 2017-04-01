@@ -3,8 +3,9 @@ MAINTAINER Tim Cera <tim@cerazone.net>
 
 RUN    apt-get -y update
 RUN    apt-get -y install python3-numpy python3-scipy python3-matplotlib ipython3 ipython3-notebook python3-pandas python3-sympy python3-nose
-RUN    apt-get -y install libjs-jquery libjs-mathjax python3-pyqt4 tortoisehg gitk ipython3-qtconsole python3-pep8 pyflakes pylint python3-jedi python3-psutil python3-rope python3-sphinx
+RUN    apt-get -y install libjs-jquery libjs-mathjax python3-pyqt4 tortoisehg gitk ipython3-qtconsole python3-pep8 pyflakes pylint python3-jedi python3-psutil python3-sphinx
 RUN    apt-get -y install python3-pip
+RUN    pip3 install rope_py3k
 RUN    pip3 install spyder3
 RUN    pip3 install wdmtoolbox
 RUN    pip3 install hspfbintoolbox
