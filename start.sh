@@ -11,5 +11,7 @@ GROUP_ID=`ls -lahn $HOME_NAME | grep $USER_NAME | awk {'print $4'}`
 
 groupadd -g $GROUP_ID spyder
 useradd --shell /bin/bash --uid $USER_ID --gid $GROUP_ID $USER_NAME
-su $USER_NAME -c "/usr/bin/spyder3"
+PYTHON=`which python3`
+PYTHONDIR=`dirname $PYTHON`
+su $USER_NAME -c "$PYTHONDIR/spyder3"
 
