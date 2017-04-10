@@ -15,3 +15,5 @@ useradd --shell /bin/bash --uid $USER_ID --gid $GROUP_ID $USER_NAME
 SPYDER=`which spyder3`
 su $USER_NAME -c ${SPYDER}
 
+tail -f /dev/null
+
